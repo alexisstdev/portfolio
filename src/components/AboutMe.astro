@@ -10,11 +10,12 @@ import ILinkedin from '../assets/icons/ILinkedin.astro';
       <h1>
         Hi, I'm <span>Alexis</span>
       </h1>
-      <h2 class='title'>Software Developer</h2>
+      <h2 class='title'>Fullstack Developer</h2>
       <p class='description'>
-        Deeply passionate about creating user experiences and web applications. Dedicated
-        to delivering exceptional results and committed to maintaining meticulous
-        attention to detail in all my works.
+        <b>1 year of experience</b> developer from <b>Tamaulipas, Mexico.</b> Committed about
+        creating <b>user experiences</b> and <b>web applications.</b> Dedicated to delivering
+        <b>exceptional results</b> and maintaining meticulous <b>attention to detail</b> in
+        all my work.
       </p>
       <div class='social-links'>
         <a href='https://github.com/alexisstdev' target='_blank'>
@@ -47,7 +48,14 @@ import ILinkedin from '../assets/icons/ILinkedin.astro';
   }
 
   .description {
-    margin-bottom: 0;
+    margin-top: 0.4rem;
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+  }
+
+  .description > b {
+    color: var(--text-primary);
+    font-weight: 400;
   }
 
   .content {
@@ -72,14 +80,14 @@ import ILinkedin from '../assets/icons/ILinkedin.astro';
   }
 
   .info > h1 {
-    font-size: var(--text-3xl);
+    font-size: var(--text-6xl);
     line-height: 4rem;
-    font-weight: 600;
   }
 
   .title {
-    font-size: var(--text-sm);
-    font-weight: normal;
+    font-size: var(--text-base);
+    font-weight: 500;
+    margin-top: 1rem;
   }
 
   .social-links {

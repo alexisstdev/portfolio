@@ -38,6 +38,10 @@ import SectionContainer from './SectionContainer.astro';
     grid-auto-rows: 100px;
     grid-auto-flow: dense;
     gap: 1rem;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fill, minmax(20px, 2fr));
+    }
   }
 
   .projects-grid > article:nth-child(1) {
@@ -69,6 +73,10 @@ import SectionContainer from './SectionContainer.astro';
     position: relative;
     overflow: hidden;
     border-radius: 1.2rem;
+
+    @media screen and (max-width: 768px) {
+      grid-row-end: span 5 !important;
+    }
   }
 
   img {
@@ -168,10 +176,6 @@ import SectionContainer from './SectionContainer.astro';
     .overlay {
       opacity: 1;
       padding: 1rem;
-    }
-
-    article {
-      grid-row-end: span 5 !important;
     }
   }
 </style>

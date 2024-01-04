@@ -39,11 +39,11 @@ const { title, description } = Astro.props;
       :root {
         --font-family: 'Onest Variable', sans-serif;
 
-        --bgcolor: #111827;
-        --text-primary: #eceff4;
-        --accent-color: #79b8ca;
-        --text-secondary: #b8bec4;
-        --dark-secondary: #1e293b;
+        --bgcolor: #141921;
+        --text-primary: #f7fafc;
+        --accent-color: #4299e1;
+        --text-secondary: #a0aec0;
+        --dark-secondary: #2d3748;
 
         --text-xs: clamp(0.8rem, 1.25vw, 0.9rem);
         --text-sm: clamp(1rem, 1.5vw, 1.1rem);
@@ -52,6 +52,10 @@ const { title, description } = Astro.props;
         --text-xl: clamp(1.6rem, 2.25vw, 2.4rem);
         --text-2xl: clamp(1.8rem, 2.5vw, 2.8rem);
         --text-3xl: clamp(2rem, 3vw, 3.2rem);
+        --text-4xl: clamp(2.2rem, 3.5vw, 3.6rem);
+        --text-5xl: clamp(2.4rem, 4vw, 4rem);
+        --text-6xl: clamp(2.6rem, 4.5vw, 4.4rem);
+        --text-7xl: clamp(2.8rem, 5vw, 4.8rem);
       }
 
       * {
@@ -64,18 +68,20 @@ const { title, description } = Astro.props;
 
       body {
         background-color: var(--bgcolor);
-        /* background-image: radial-gradient(
+        background-image: radial-gradient(
           ellipse 70% 40% at 50% -20%,
-          #79b8ca40,
+          #4299e130,
           rgba(255, 255, 255, 0)
         );
- */
+
+        min-height: 100vh;
         color: var(--text-primary);
-        font-family: var(--font-family);
         overflow-x: hidden;
         max-width: 1150px;
+
         margin: auto;
         padding-inline: 1rem;
+        font-family: var(--font-family);
       }
 
       html {

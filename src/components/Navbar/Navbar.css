@@ -5,25 +5,16 @@
 
 .navbar {
   background-color: var(--dark-secondary);
-
   z-index: 99;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-  padding-inline: 3rem;
-  border-radius: 2rem;
+  padding-inline: 2rem;
+  border-radius: 1rem;
   margin-top: 1rem;
-  height: 3rem;
+  height: 2.7rem;
   transition: all 0.2s ease-in-out;
-}
-
-.navbar.scroll-down {
-  transform: translateY(-140%);
-}
-
-.navbar.scroll-up {
-  transform: translateY(0%);
 }
 
 .active {
@@ -35,12 +26,11 @@
   cursor: pointer;
   width: 7rem;
   margin-right: 3rem;
-  margin-top: 0.3rem;
+  margin-top: 0.4rem;
 }
 
 .navbar-logo:hover {
   opacity: 0.85;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-menu {
@@ -111,6 +101,7 @@
   .navbar-toggle {
     display: block;
     cursor: pointer;
+    margin-top: 0.4rem;
   }
 
   .navbar-toggle i {
