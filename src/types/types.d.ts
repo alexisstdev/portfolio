@@ -1,3 +1,5 @@
+import { JSX } from 'preact';
+
 export interface ExperienceItem {
   title: string;
   role: string;
@@ -13,6 +15,7 @@ interface ProjectItem {
   preview: string;
   description: string;
   tags: string[];
+  mainTags: string[];
   component?: JSX.Element;
   longDescription?: string;
   images?: string[];
