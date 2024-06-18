@@ -16,7 +16,6 @@ interface ProjectItem {
   description: string;
   tags: string[];
   mainTags: string[];
-  component?: JSX.Element;
   longDescription?: string;
   images?: string[];
   video?: string;
