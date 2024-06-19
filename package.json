@@ -10,14 +10,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "0.3.4",
-    "@astrojs/preact": "3.0.2",
-    "@astrojs/vercel": "6.1.2",
+    "@astrojs/check": "0.7.0",
+    "@astrojs/preact": "3.5.0",
+    "@astrojs/vercel": "7.7.1",
     "@emailjs/browser": "3.10.0",
     "@fontsource-variable/onest": "5.0.2",
-    "astro": "4.0.8",
+    "@rollup/rollup-linux-x64-gnu": "4.6.1",
+    "astro": "4.10.3",
+    "browser": "link:@types/@emailjs/browser",
     "preact": "10.19.3",
-    "typescript": "5.3.3",
-    "@rollup/rollup-linux-x64-gnu": "4.6.1"
+    "typescript": "5.3.3"
   }
 }
