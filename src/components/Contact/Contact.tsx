@@ -1,4 +1,4 @@
-import { useEffect } from 'preact/hooks';
+/* import { useEffect } from 'preact/hooks';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 import IGithub from '../../assets/icons/IGithub.astro';
@@ -77,3 +77,4 @@ const Contact = () => {
 };
 
 export default Contact;
+ */
