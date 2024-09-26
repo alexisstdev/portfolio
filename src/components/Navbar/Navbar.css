@@ -24,9 +24,9 @@
 .navbar-logo {
   transition: all 0.2s ease;
   cursor: pointer;
-  width: 7rem;
   margin-right: 3rem;
   margin-top: 0.4rem;
+  width: 10rem;
 }
 
 .navbar-logo:hover {
