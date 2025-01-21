@@ -1,9 +1,9 @@
 ---
-import IGithub from '../assets/icons/IGithub.astro';
-import IWeb from '../assets/icons/IWeb.astro';
-import Layout from '../layouts/Layout.astro';
-import type { ProjectItem } from '../types/types';
-import ProjectNav from './ProjectNav/ProjectNav';
+import IGithub from "../assets/icons/IGithub.astro";
+import IWeb from "../assets/icons/IWeb.astro";
+import Layout from "../layouts/Layout.astro";
+import type { ProjectItem } from "../types/types";
+import ProjectNav from "./ProjectNav/ProjectNav";
 
 interface Props {
   project: ProjectItem;
@@ -12,38 +12,38 @@ interface Props {
 const { project } = Astro.props;
 ---
 
-<Layout title={'Project | ' + project.title} description={project.description}>
-  <div class='content'>
-    <p class='category'>{project.category}</p>
-    <h1 class='name'>
+<Layout title={"Project | " + project.title} description={project.description}>
+  <div class="content">
+    <p class="category">{project.category}</p>
+    <h1 class="name">
       {project.title}
     </h1>
-    <div class='nav'>
-      <a href='/'>Home &nbsp;</a>
+    <div class="nav">
+      <a href="/">Home &nbsp;</a>
       <span>
-        {'>'}
-        <a href='/#projects'>&nbsp; Projects &nbsp;</a>
-        {'>'}&nbsp; {project.title}
+        {">"}
+        <a href="/#projects">&nbsp; Projects &nbsp;</a>
+        {">"}&nbsp; {project.title}
       </span>
     </div>
-    <div class='description-container'>
-      <div class='description' set:html={project.longDescription} />
-      <div class='description-tags'>
+    <div class="description-container">
+      <div class="description" set:html={project.longDescription} />
+      <div class="description-tags">
         <h3>Tech Stack</h3>
-        <p class='work-tags'>
-          {project.tags.join(', ') + '.'}
+        <p class="work-tags">
+          {project.tags.join(", ") + "."}
         </p>
-        <div class='links'>
+        <div class="links">
           {
             project.github && (
-              <a href={project.github} target='_blank' class='icon-link'>
+              <a href={project.github} target="_blank" class="icon-link">
                 <IGithub />
               </a>
             )
           }
           {
             project.live && (
-              <a href={project.live} target='_blank' class='icon-link'>
+              <a href={project.live} target="_blank" class="icon-link">
                 <IWeb />
               </a>
             )
@@ -61,11 +61,13 @@ const { project } = Astro.props;
         ))
     }
     {
-      project.video && (
-        <video controls>
-          <source src={project.video} type='video/mp4' />
-        </video>
-      )
+      project.videos &&
+        project.videos.length > 0 &&
+        project.videos.map((video) => (
+          <video controls>
+            <source src={video} type="video/mp4" />
+          </video>
+        ))
     }
     <ProjectNav project={project} client:visible />
   </div>

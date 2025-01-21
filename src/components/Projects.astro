@@ -1,25 +1,25 @@
 ---
-import IExternalLink from '../assets/icons/IExternalLink.astro';
-import { PROJECTS } from '../data/ProjectsData.astro';
-import SectionContainer from './SectionContainer.astro';
+import IExternalLink from "../assets/icons/IExternalLink.astro";
+import { PROJECTS } from "../data/ProjectsData.astro";
+import SectionContainer from "./SectionContainer.astro";
 ---
 
-<SectionContainer id='projects' title='Recent projects'>
-  <div class='projects-grid'>
+<SectionContainer id="projects" title="Recent projects">
+  <div class="projects-grid">
     {
       PROJECTS.map((project) => (
         <article>
           <a href={`project/${project.id}`}>
             <img src={project.preview} alt={project.title} />
-            <div class='overlay'>
+            <div class="overlay">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <ul class='tags'>
+              <ul class="tags">
                 {project.mainTags.map((tag) => (
                   <li>{tag}</li>
                 ))}
               </ul>
-              <div class='view-details'>
+              <div class="view-details">
                 See details
                 <IExternalLink />
               </div>
@@ -54,7 +54,7 @@ import SectionContainer from './SectionContainer.astro';
 
   .projects-grid > article:nth-child(1) {
     grid-column-end: span 6;
-    grid-row-end: span 5;
+    grid-row-end: span 6;
   }
 
   .projects-grid > article:nth-child(2) {
@@ -64,7 +64,7 @@ import SectionContainer from './SectionContainer.astro';
 
   .projects-grid > article:nth-child(3) {
     grid-column-end: span 6;
-    grid-row-end: span 4;
+    grid-row-end: span 5;
   }
 
   .projects-grid > article:nth-child(4) {
@@ -74,15 +74,25 @@ import SectionContainer from './SectionContainer.astro';
 
   .projects-grid > article:nth-child(5) {
     grid-column-end: span 6;
-    grid-row-end: span 3;
+    grid-row-end: span 5;
   }
 
   .projects-grid > article:nth-child(6) {
     grid-column-end: span 6;
-    grid-row-end: span 4;
+    grid-row-end: span 6;
   }
 
   .projects-grid > article:nth-child(7) {
+    grid-column-end: span 6;
+    grid-row-end: span 4;
+  }
+
+  .projects-grid > article:nth-child(8) {
+    grid-column-end: span 6;
+    grid-row-end: span 5;
+  }
+
+  .projects-grid > article:nth-child(9) {
     grid-column-end: span 6;
     grid-row-end: span 3;
   }

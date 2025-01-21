@@ -1,0 +1,27 @@
+---
+import SectionContainer from "./SectionContainer.astro";
+import { TECH_ITEMS } from "../data/TechItems";
+import TechsList from "./TechsList.astro";
+
+const languages = TECH_ITEMS.filter((tech) => tech.category === "language");
+const technologies = TECH_ITEMS.filter(
+  (tech) => tech.category === "technology"
+);
+const others = TECH_ITEMS.filter((tech) => tech.category === "other");
+---
+
+<SectionContainer title="Skills" id="techs">
+  <div class="techs-container">
+    <TechsList title="Languages" items={languages} />
+    <TechsList title="Technologies" items={technologies} />
+    <TechsList title="Other" items={others} />
+  </div>
+</SectionContainer>
+
+<style>
+  .techs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+</style>
