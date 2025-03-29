@@ -61,23 +61,23 @@ export const EXPERIENCE_ITEMS: ExperienceItem[] = [
 			"Cron Jobs",
 		],
 	},
-	{
-		title: "Gran Logia de Tamaulipas",
-		role: "Freelance Application",
-		time: "September 2023",
-		description:
-			'Fullstack application with +1000 active users across Tamaulipas, for the "Gran Logia de Tamaulipas". You can see more details about the project on the Projects Section.',
-		techStack: [
-			"Typescript",
-			"Prisma",
-			"React",
-			"NodeJS",
-			"Express",
-			"MySQL",
-			"JWT",
-			"Redux",
-			"QR Code",
-			"Web Sockets",
-		],
-	},
+	// {
+	// 	title: "Gran Logia de Tamaulipas",
+	// 	role: "Freelance Application",
+	// 	time: "September 2023",
+	// 	description:
+	// 		'Fullstack application with +1000 active users across Tamaulipas, for the "Gran Logia de Tamaulipas". You can see more details about the project on the Projects Section.',
+	// 	techStack: [
+	// 		"Typescript",
+	// 		"Prisma",
+	// 		"React",
+	// 		"NodeJS",
+	// 		"Express",
+	// 		"MySQL",
+	// 		"JWT",
+	// 		"Redux",
+	// 		"QR Code",
+	// 		"Web Sockets",
+	// 	],
+	// },
 ];
