@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useState } from "preact/hooks";
 
 export default function useNavbar() {
-  const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
-  function toggleMenu(isOpenCheck: boolean) {
-    if (!isOpenCheck) document.body.classList.add('no-scroll');
-    else document.body.classList.remove('no-scroll');
+	function toggleMenu(isOpenCheck: boolean) {
+		if (!isOpenCheck) document.body.classList.add("no-scroll");
+		else document.body.classList.remove("no-scroll");
 
-    setIsOpen(!isOpenCheck);
-  }
+		setIsOpen(!isOpenCheck);
+	}
 
-  return { isOpen, toggleMenu };
+	return { isOpen, toggleMenu };
 }

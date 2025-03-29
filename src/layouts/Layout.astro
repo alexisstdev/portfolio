@@ -1,9 +1,8 @@
 ---
-import '@fontsource-variable/onest';
-import Navbar from '../components/Navbar/Navbar.jsx';
-import Footer from '../components/Footer.astro';
-import { ViewTransitions } from 'astro:transitions';
-import type AboutMe from '../components/AboutMe.astro';
+import "@fontsource-variable/onest";
+import Navbar from "../components/Navbar/Navbar.jsx";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -14,19 +13,19 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang="en">
   <head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='generator' content={Astro.generator} />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
 
-    <meta name='author' content='alexisdev' />
-    <meta name='description' content={description} />
-    <meta property='og:title' content={title} />
-    <meta property='og:description' content='Personal Web Portfolio' />
-    <meta property='og:image' content='/preview.webp' />
-    <meta property='og:site_name' content={title} />
+    <meta name="author" content="alexisdev" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="Personal Web Portfolio" />
+    <meta property="og:image" content="/preview.webp" />
+    <meta property="og:site_name" content={title} />
     <title>{title}</title>
     <ViewTransitions />
   </head>
@@ -37,7 +36,7 @@ const { title, description } = Astro.props;
     <Footer />
     <style is:global>
       :root {
-        --font-family: 'Onest Variable', sans-serif;
+        --font-family: "Onest Variable", sans-serif;
 
         --bgcolor: #141921;
         --text-primary: #f7fafc;
