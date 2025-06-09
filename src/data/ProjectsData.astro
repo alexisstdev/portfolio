@@ -3,6 +3,41 @@ import type { ProjectItem } from "../types/types";
 
 export const PROJECTS: ProjectItem[] = [
   {
+    title: "SOIA+ - Consultas Aduaneras SaaS",
+    id: "soiaplus",
+    category: "SaaS Application",
+    preview: "/projects/soiaplus/preview.webp",
+    images: ["/projects/soiaplus/preview.webp"],
+    description:
+      "Commercial SaaS platform that simplifies and optimizes customs queries to the SOIA system with multi-user collaboration, automated scheduling, and REST API integration.",
+    tags: [
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Stripe",
+      "REST API",
+      "Real-time Notifications",
+      "Team Collaboration",
+      "Automated Scheduling",
+      "Multi-tenant",
+      "BullMQ",
+    ],
+    live: "https://soiaplus.com",
+    videos: ["https://soiaplus.com/hero-video-demo/video.webm"],
+    mainTags: ["NestJS", "BullMQ", "PostgreSQL", "Stripe", "REST API"],
+    longDescription: `<p>SOIA+ is a comprehensive SaaS platform that revolutionizes how businesses interact with Mexico's Sistema de Operación Integral Aduanera (SOIA). Building upon the foundation of automated customs queries, SOIA+ transforms the concept into a full commercial solution.</p>
+    <p><strong>Key Features:</strong></p>
+    <ul>
+      <li><strong>Multi-user Collaboration:</strong> Teams can work together in real-time with role-based access control and permission management</li>
+      <li><strong>Automated Scheduling:</strong> Set up recurring queries that run automatically according to your defined schedule with email notifications</li>
+      <li><strong>REST API Integration:</strong> Seamlessly integrate with existing ERP/CRM systems through our comprehensive API</li>
+      <li><strong>Bulk Processing:</strong> Process thousands of queries in minutes with support for pedimentos, VIN numbers, and container searches</li>
+      <li><strong>Advanced Analytics:</strong> Visual dashboards with detailed metrics and reporting capabilities</li>
+    </ul>
+    <p>The platform offers three pricing tiers (Basic, Pro, and Enterprise) with secure Stripe payment processing, scaling from small teams to enterprise organizations with unlimited users and queries.</p>
+    <p>SOIA+ delivers an 85% reduction in query time while processing over 10,000 daily queries with 98% customer satisfaction, making it the go-to solution for customs operations in Mexico.</p>`,
+  },
+  {
     title: "Agencia Aduanal Tebar",
     id: "aatebar",
     category: "Fullstack Application",
@@ -115,34 +150,34 @@ export const PROJECTS: ProjectItem[] = [
   //   longDescription:
   //     "<p>Gran Logia de Tamaulipas User Guide is a frontend application designed to provide users with detailed information and instructions on how to use the Gran Logia de Tamaulipas application. It features seamless updates, allowing for quick documentation revisions so that users always have access to the most current guidance.</p>",
   // },
-  // {
-  //   title: "Gran Logia de Tamaulipas",
-  //   id: "gran-logia-tamaulipas",
-  //   category: "Fullstack Application",
-  //   preview: "/projects/masoniclodge/preview.webp",
-  //   images: ["/projects/masoniclodge/preview.webp"],
-  //   description:
-  //     "Web application designed for managing the Masonic lodges and their members in Tamaulipas.",
-  //   tags: [
-  //     "TypeScript",
-  //     "NodeJS",
-  //     "Express",
-  //     "React",
-  //     "MySQL",
-  //     "Redux",
-  //     "QR Code",
-  //     "RTK Query",
-  //     "Chakra UI",
-  //     "JWT",
-  //     "Web Sockets",
-  //   ],
-  //   mainTags: ["TypeScript", "NodeJS", "Express", "React", "MySQL"],
-  //   longDescription: `<p>I developed a fullstack application for "Gran Logia de Tamaulipas" to streamline the management of Masonic lodges and their members in Tamaulipas, México. </p>
-  //   <p>One of the key features is the QR code scanning functionality. Members can conveniently use their phones to scan QR codes associated with a lodge, allowing them to keep track of their attendances and maintain a digital register.</p>
-  //   <p>The frontend, built with React, Redux, Chakra UI, and React Router, provides an intuitive interface with a responsive and user-friendly design. Administrators can easily navigate and perform CRUD operations to manage lodges and members effectively.</p>
-  //   <p>The backend, powered by Node.js and Express, along with a MySQL database, provides the necessary API to support the frontend functionalities. It utilizes JSON Web Tokens (JWT) for secure user authentication and authorization.</p>
-  //   <p>Due to client confidentiality, I am unable to share the source. However, I am working on a demo version.</p>`,
-  // },
+  {
+    title: "Gran Logia de Tamaulipas",
+    id: "gran-logia-tamaulipas",
+    category: "Fullstack Application",
+    preview: "/projects/masoniclodge/preview.webp",
+    images: ["/projects/masoniclodge/preview.webp"],
+    description:
+      "Web application designed for managing the Masonic lodges and their members in Tamaulipas.",
+    tags: [
+      "TypeScript",
+      "NodeJS",
+      "Express",
+      "React",
+      "MySQL",
+      "Redux",
+      "QR Code",
+      "RTK Query",
+      "Chakra UI",
+      "JWT",
+      "Web Sockets",
+    ],
+    mainTags: ["TypeScript", "NodeJS", "Express", "React", "MySQL"],
+    longDescription: `<p>I developed a fullstack application for "Gran Logia de Tamaulipas" to streamline the management of Masonic lodges and their members in Tamaulipas, México. </p>
+    <p>One of the key features is the QR code scanning functionality. Members can conveniently use their phones to scan QR codes associated with a lodge, allowing them to keep track of their attendances and maintain a digital register.</p>
+    <p>The frontend, built with React, Redux, Chakra UI, and React Router, provides an intuitive interface with a responsive and user-friendly design. Administrators can easily navigate and perform CRUD operations to manage lodges and members effectively.</p>
+    <p>The backend, powered by Node.js and Express, along with a MySQL database, provides the necessary API to support the frontend functionalities. It utilizes JSON Web Tokens (JWT) for secure user authentication and authorization.</p>
+    <p>Due to client confidentiality, I am unable to share the source. However, I am working on a demo version.</p>`,
+  },
   {
     title: "Alexis.AI - Image Generation",
     id: "alexisai",
