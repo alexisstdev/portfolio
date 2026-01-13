@@ -3,7 +3,7 @@ import type { ExperienceItem } from "../types/types";
 export const EXPERIENCE_ITEMS: ExperienceItem[] = [
 	{
 		title: "Muris Salinas Consultores",
-		role: "Fullstack Developer",
+		role: "Software Engineer",
 		time: "January 2024 - Present",
 		description:
 			"Developed a software to support customs operations, including container tracking, invoice processing (CFDI), and integration with external databases/systems like government platforms and SAT. Improved data processing, storage, and system efficiency. Collaborated on developing features for user roles and internal workflows.",
